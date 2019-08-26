@@ -2,7 +2,7 @@
 title: pRoJEct-NeGYa
 owner: "DeerRIDER"
 url: "https://haogemen.github.io"
-baseurl: "/haogemen"
+baseurl: "/"
 permalink: /:title/
 description: ""
 markdown: kramdown
