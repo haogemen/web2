@@ -132,7 +132,7 @@ $blk-timing-function: cubic-bezier(0.98, -0.23, 0.65, 0.7);
     .div_article {
       top: 34px;
       position: relative;
-      height: 95%;
+      height: 97%;
       width: 100%;
       overflow-y: auto;
       overflow-x: hidden;
@@ -208,7 +208,7 @@ $blk-timing-function: cubic-bezier(0.98, -0.23, 0.65, 0.7);
     }
     // scroll bar
     .div_article::-webkit-scrollbar {
-      width: 2px;
+      width: 10px;
     }
     .div_article::-webkit-scrollbar-thumb {
       background-color: $color-primary;
@@ -343,7 +343,7 @@ body {
   textarea {
     margin: 0;
     padding: 0;
-    border: 0.5px solid rgba($color-primary, 0.9);
+    /*border: 0.5px solid rgba($color-primary, 0.9);*/
     background-color: rgba($color-postbg, 0.7);
     color: $color-warning;
     font-size: 15px;
