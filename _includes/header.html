@@ -9,7 +9,7 @@
                     <a class="header_btn" href="{{ site.url }}{{ site.baseurl }}">
                         <i class="fa fa-home">
                             {% if page.btn_text != false %}
-                                <p class="btn_text">Home</p>
+                                <p class="btn_text">首页</p>
                             {% endif %}
                         </i>
                     </a>
@@ -24,22 +24,12 @@
                         </i>
                     </a>
                 {% endif %}
-                <!-- github -->
-                {% if site.github != "" %}
-                    <a class="header_btn" href="https://github.com/{{ site.github }}">
-                        <i class="fa fa-github">
-                            {% if page.btn_text != false %}
-                                <p class="btn_text">Github</p>
-                            {% endif %}
-                        </i>
-                    </a>
-                {% endif %}
                 <!-- maximize -->
                 {% if page.maximize != false %}
                     <a class="header_btn" id="mxmz_btn" onclick="toggle_maximize()">
                         <i class="fa fa-window-maximize">
                             {% if page.btn_text != false %}
-                                <p class="btn_text" id="mxmz_text">Maximize</p>
+                                <p class="btn_text" id="mxmz_text">最大化</p>
                             {% endif %}
                         </i>
                     </a>
@@ -49,7 +39,7 @@
                     <a class="header_btn" id="acs_btn" onclick="apply_token()">
                         <i class="fa fa-key">
                             {% if page.btn_text != false %}
-                                <p class="btn_text">Token</p>
+                                <p class="btn_text">密钥</p>
                             {% endif %}
                         </i>
                     </a>
@@ -64,7 +54,7 @@
                     <a class="header_btn" onclick="scroll_percentage(-0.88)">
                         <i class="fa fa-backward">
                             {% if page.btn_text != false %}
-                                <p class="btn_text">Prev</p>
+                                <p class="btn_text">上一页</p>
                             {% endif %}
                         </i>
                     </a>
@@ -72,7 +62,7 @@
                     <a class="header_btn" onclick="scroll_percentage(0.88)">
                         <i class="fa fa-forward">
                             {% if page.btn_text != false %}
-                                <p class="btn_text">Next</p>
+                                <p class="btn_text">下一页</p>
                             {% endif %}
                         </i>
                     </a>
@@ -80,7 +70,7 @@
                     <a class="header_btn popup_btn" onclick="toggle_toc()">
                         <i class="fa fa-bars">
                             {% if page.btn_text != false %}
-                                <p class="btn_text">Content</p>
+                                <p class="btn_text">内容</p>
                             {% endif %}
                         </i>
                     </a>
@@ -138,7 +128,7 @@
       ctner.style.top = "0";
       ctner.style.maxWidth = "100%";
       if (document.getElementById("mxmz_text")) {
-        document.getElementById("mxmz_text").innerHTML = "Restore";
+        document.getElementById("mxmz_text").innerHTML = "最小化";
       }
       ctner_state = 1;
     } else if (ctner_state == 1) {
@@ -147,7 +137,7 @@
       ctner.style.top = "2%";
       ctner.style.maxWidth = "1240px";
       if (document.getElementById("mxmz_text")) {
-        document.getElementById("mxmz_text").innerHTML = "Maximize";
+        document.getElementById("mxmz_text").innerHTML = "最大化";
       }
       ctner_state = 0;
     }
