@@ -151,7 +151,7 @@
   function decrypt_all(pwd, class_name) {
     var elem_clct = document.getElementsByClassName(class_name);
     if (elem_clct.length == 0) {
-      console.log("No texts to decrypt!");
+      console.log("没有要解密的文本");
       return false;
     }
     for (acc = 0; acc < elem_clct.length; acc++) {
@@ -165,7 +165,7 @@
       try {
         var txt = sjcl.json.decrypt(pwd, ct);
       } catch (e) {
-        alert("Invalid Access Token!");
+        alert("无效的访问令牌！");
         return;
       }
       elem_clct[acc].innerHTML = txt;
